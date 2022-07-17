@@ -6,8 +6,8 @@
 -- Simple singleton in Qx => a singleton is a object automatically instanciate when import the class when you import the class the object is always the same.
 --]]
 
-QX.export("SimpleExample", function(cls)
-    ---@class SimpleExample : QX.Object
+QX.export("SimpleService", function(cls)
+    ---@class SimpleService : QX.Object
     local class = cls;
 
     ---@type SimpleEntity

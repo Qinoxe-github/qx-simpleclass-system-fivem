@@ -10,8 +10,8 @@ QX.run(function()
     ---@type SimpleEntity
     local SimpleEntity = QX.import("SimpleEntity");
 
-    ---@type SimpleExample
-    local SimpleExample = QX.import("SimpleExample");
+    ---@type SimpleService
+    local SimpleService = QX.import("SimpleService");
 
 
     Console:info("Hello World! From Qx context in the server side!")
@@ -30,7 +30,7 @@ QX.run(function()
 
     Console:info("Use the repository system to save the instance in the database")
 
-    local simpleExample = SimpleExample:new("Tewttttt"); -- Create a new instance of the SimpleExample class and pass some argument to the constructor of the object
+    local simpleExample = SimpleService:new("Tewttttt"); -- Create a new instance of the SimpleExample class and pass some argument to the constructor of the object
 
     simpleExample.repository:deleteAll(); -- Delete all the data in the database
 
