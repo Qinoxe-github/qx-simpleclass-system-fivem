@@ -12,5 +12,9 @@ QX.export("SimpleClass", function(cls)
 
     end
 
+    function class:test()
+
+    end
+
     return class;
 end)
