@@ -63,6 +63,11 @@ end)
 ## Orm
 
 With orm the SQL request will be automitzed by the Repository system / Only server side
+Add this to your *server.cfg* is you want to use it
+
+```lua
+set mysql_mfa_load "mysql://root@localhost:3307/{MaDataBaseName}?waitForConnections=true&charset=utf8mb4"
+```
 
 Create entity for orm
 ```lua
